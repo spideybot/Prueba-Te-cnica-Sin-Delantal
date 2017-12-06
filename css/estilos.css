@@ -18,14 +18,15 @@ a {
 }
 
 a:link, a:visited{
-    
+    color: #CF5C3F
 }
 
 a:hover, a:active{
-    
-    
+    background-color: #CF5C3F;
+    color: #fff;
 }
 
+/*HEADERS Y CONTENIDO*/
 .headerPrincipal img{
     width:30%;
     height: auto;
@@ -33,96 +34,429 @@ a:hover, a:active{
 }
 
 .headerPrincipal nav{
-    background-color: #666;
+    background-color: transparent;
     height: 40px;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    margin-left: 100px;
 }
 
 .headerPrincipal nav ul{
     list-style:none;
     margin: 0 auto;
+    border-radius: 50%;
+    border-color: #3b8ea5;
 }
 
 .headerPrincipal nav ul li{
     float: left;
     display: inline;
+    border-radius: 50%;
+    padding: 8px 16px;
+    background-color: #3b8ea5;
+    margin-right: 200px;
+    border: 2px solid black;
 }
 
 .headerPrincipal nav a:link, .headerPrincipal nav a:visited{
     color: white;
     display: inline-block;
-    padding: 10px 25px;
-    height: 20px;
 }
 
 .headerPrincipal nav a:hover, .headerPrincipal nav a:active,
 .headerPrincipal nav .active a:link, .headerPrincipal nav .active a:visited{
-    background-color: #CF5C3F;
     text-shadow: none;
+    border-radius: 50%;
+    background-color: #3b8ea5;
 }
 
 .headerPrincipal nav ul li a{
-    border-radius: 5px;
+    border-radius: 50px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
 }
 
 .contenidoPrincipal{
+    padding-top: 50px;
+    line-height: 25px;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
 }
 
 .contenido{
-    width:70%;
+    width:100%;
+    float:left;
+}
+
+.contenidoSuperior p{
+    background-color: #FFF;
+     border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    overflow: hidden;
+    padding: 0% 2%;
+    margin-top: 2%;
+}
+
+.contenidoSuperior h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.contenidoInferior{
+    background-color: white;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 5px 10px 8px #353535;
+
+}
+
+.contenidoInferior h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}    
+
+.contenidoInferior p{
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+
+/*BOTON DE FORMULARIO PASO 1*/
+.boton1{
+    text-align: center;
+    margin: auto;
+
+}
+
+.boton2{
+    text-align: center;
+    margin: auto;
+}
+
+.enviarPago{
+    display: block;
+    width:  100%;
+    padding: 20px;
+    background-color: #f49e4c;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.enviarDatos{
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 50px;
+    background-color: #f49e4c;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.check{
+    width: 100%;
+    height: auto;
+}
+
+.confirmacion{
+    font-display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+}
+
+.notice{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px!important;
+    padding-left: 250px !important;
+    padding-right: 200px !important;
+    text-align: justify !important;
+}
+
+/* OPCIONES DE PAGO FORMULARIO PASO 2*/
+.contenidoPago{
+    width:50%;
     float:left;
 }
 
 .contenidoSuperior{
     background-color: #FFF;
-     border-radius: 5px;
+    border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-    overflow: hidden;
-    padding: 3% 5%;
+    box-shadow: 5px 10px 8px #353535;
+
+}
+
+.contenidoSuperior header{
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.metodosPago{
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+.metodosPago hr{
+padding-left: 0 !important;
+width: 100%;
+display: block;
+    
+}
+
+/* Estilos para la barra lateral del paso 2*/
+.top-sidebar{
+    width:41%;
+    float:left;
+    background-color: #FFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 2% 0 2% 3%;
+    box-shadow: 5px 10px 8px #353535;
+}
+
+.top-sidebar table{
+    margin: 2% 0% 2% 3%;
+    padding: 2% 3%;
+    font-size: 16px;
+}
+
+.top-sidebar h2{
+    margin: 0;  
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+}    
+
+.top-sidebar td{
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+
+.post-info{
+    font-style: italics;
+    color:#999;
+    font-size:90%;
+}
+
+
+.footerPrincipal{
+    width:100%;
+    height: 40px;
+    float: left;
+    text-align: center;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 2% 0;
+}
+
+
+.footerPrincipal p{
+    width: 92%;
+    margin:1% auto;
+    color: #FFF;
+}
+
+.footerPrincipal a:link, a:visited{
+    color: #f5ee9e;
+}
+
+.datosPersonalesForm{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.datosPersonalesForm input[type=text], 
+.datosPersonalesForm input[type=email],
+.datosPersonalesForm input[type=number],
+.datosPersonalesForm input[type=tel],
+textarea{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    border-radius: 5px;
+    padding: 7px;
+    margin:0px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;  
+    width: 100%;
+    height:40px;
+}
+
+.titulos{
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: lightslategray;
+    color: white;
+    width: 100%
+}
+
+.datosPersonalesForm label{
+    display: block;
+    line-height: 50px;
+    font-weight: bolder;
+}
+
+.datosPersonalesForm ::placeholder{
+    color: #e3d963;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (min-width: 150px) and (max-width:567px)
+{
+    .cuerpo{
+    width:90%;
+    font-size:95%;
+    }
+    
+    .headerPrincipal img{
+    width:100%;
+}
+    
+    .headerPrincipal nav{
+    height: 120px;
+}
+
+    .headerPrincipal nav ul{
+    padding-left: 0;
+}
+
+    .headerPrincipal nav ul li{
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+    .headerPrincipal nav a:link, .headerPrincipal nav a:visited{
+    padding: 10px 25px;
+    height: 20px;
+    display: block;
+}
+
+    .contenido{
+    width:100%;
+    float:left;
     margin-top: 2%;
 }
 
-.contenidoInferior{
-    background-color: white;
+    .post-info{
+    display:none;
+        
+    }
+    
+    .contenidoSuperior{
+    background-color: #FFF;
      border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     overflow: hidden;
     padding: 3% 5%;
-    margin-top:2%;
+    }
+
+    .contenidoInferior{
+    margin-top:3%;
 }
 
-.top-sidebar{
-    width:25%;
-    float:left;
-    background-color: #FFF;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    .top-sidebar{
+    width:94%;
+    margin: 2% 0 2% 0%;
+    padding: 2% 3%;
 }
 
-.middle-sidebar{
-     width:25%;
-    float:left;
-    background-color: #FFF;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    .middle-sidebar{
+    width:94%;
+    margin: 2% 0 2% 0%;
+    padding: 2% 3%;
 }
 
-.bottom-sidebar{
-     width:25%;
-    float:left;
-    background-color: #FFF;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    .bottom-sidebar{
+    width:94%;
+    margin: 2% 0 2% 0%;
+    padding: 2% 3%;
 }
+}
+
+@media only screen and (max-width:568px){
+    .headerPrincipal nav{
+        border-radius: 0!important;
+    }
+    
+    .headerPrincipal nav ul li{
+        border-radius: 0;
+        margin-left: 0!important;
+        margin-right: 0!important;
+        padding-left: 0 !important;
+        padding-right: 0!important;
+    }
+    
+    .headerPrincipal .active{
+        padding: 15px;
+    }
+    
+    .headerPrincipal nav{
+        margin-left: 0;
+        padding-bottom: 25px;
+    }
+    
+    #direccionUsuario{
+        height: 80px;   
+    }
+    
+    .top-sidebar table {
+    margin: 0% 0% 0% 0%;
+    padding: 2% 0%;
+    font-size: 8px;
+    text-align: justify;
+}
+    
+    .menuMobile nav{
+        display: block!important;
+        background-color#666;
+        height:40px;
+        border-radius: 5px;
+    }
+    
+    .menuMobile nav ul{
+    display: block!important;
+    list-style:none;
+    margin: 0 auto;    
+    }
+    
+    .menuMobile nav ul li{
+    float:left;
+    display: inline;
+    }
+    
+    .contenidoPago {
+    width: 100%;
+    float: left;
+}
+    
+    .notice{
+    padding-left: 0!important;
+    padding-right: 0!important;    
+        
+    }
+    
+    .tabla th {
+    padding-left: 2%;    
+    }
+}
+

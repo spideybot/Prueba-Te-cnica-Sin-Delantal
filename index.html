@@ -15,80 +15,57 @@
         
         <nav>
         <ul>
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="active">1</li>
+        <li><a href="pago.html">2</a></li>
+        <li><a href="#">3</a></li>
         </ul>
-        </nav> 
+        </nav>
+        
     </header>
-    
+    <header class="menuMobile" style="display: none;">
+    <nav>
+        <ul>
+        <li class="activoMovil"><a href="">1</a></li>
+	    <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+        </ul>
+    </nav>    
+    </header>
     <div class="contenidoPrincipal">
         <div class="contenido">
         
         <article class="contenidoSuperior">
             <header>
-                <h2><a href="#" title="First Post">First post</a></h2>
+                <h2 class="datosForm">Datos Personales</h2>
             </header>    
             
             <footer>
-                <p class="post-info">This post is written by Christian</p>
+                <p class="post-info">Por favor, llene los siguientes datos:</p>
             </footer>
             
             <content>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed finibus odio. Aliquam sit amet condimentum nisi. Quisque eget odio facilisis, ultricies massa vel, laoreet risus. Morbi et maximus enim. Curabitur enim nisl, egestas quis varius eu, blandit a purus. Etiam in enim et felis pretium pellentesque. Suspendisse nec metus scelerisque, fringilla tortor sed, pretium mi. Pellentesque nec felis sed purus porta posuere.
-                </p>
+                <form class="datosPersonalesForm" id="enviarDatos">
+                <label>Nombre completo:</label>   
+                <input type="text" required id="nombreUsuario" placeholder="Nombre Completo" value="Empresa X Y Z"><br>
+                <label>Apellidos:</label>
+                <input type="text" id="apellidosUsuario" placeholder="Apellidos"><br>    
+                <label>E-mail:</label>
+                <input type="email" required id="correoUsuario" placeholder="correo@dominio.com"><br>
+                <label>Teléfono:</label>
+                <input type="tel" required id="telefonoUsuario" placeholder="55-234-0873" value="0445533678909"><br>
+                <label>Dirección de envío:</label>
+                <textarea id="direccionUsuario" required placeholder="Calle, Colonia, Número exterior">Calle   Río   Lerma   4,   Piso   6,   Colonia   Cuauhtémoc,   CP   53000,   Ciudad de   México</textarea>    
+                </form>
                 
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed finibus odio. Aliquam sit amet condimentum nisi. Quisque eget odio facilisis, ultricies massa vel, laoreet risus. Morbi et maximus enim. Curabitur enim nisl, egestas quis varius eu, blandit a purus. Etiam in enim et felis pretium pellentesque. Suspendisse nec metus scelerisque, fringilla tortor sed, pretium mi. Pellentesque nec felis sed purus porta posuere.
-                </p>
-            </content>
-            
-        </article>
-            
-            <article class="contenidoInferior">
-            <header>
-                <h2><a href="#" title="Second Post">Second post</a></h2>
-            </header>    
-            
-            <footer>
-                <p class="post-info">This post is written by Christian</p>
-            </footer>
-            
-            <content>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed finibus odio. Aliquam sit amet condimentum nisi. Quisque eget odio facilisis, ultricies massa vel, laoreet risus. Morbi et maximus enim. Curabitur enim nisl, egestas quis varius eu, blandit a purus. Etiam in enim et felis pretium pellentesque. Suspendisse nec metus scelerisque, fringilla tortor sed, pretium mi. Pellentesque nec felis sed purus porta posuere.
-                </p>
-                
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed finibus odio. Aliquam sit amet condimentum nisi. Quisque eget odio facilisis, ultricies massa vel, laoreet risus. Morbi et maximus enim. Curabitur enim nisl, egestas quis varius eu, blandit a purus. Etiam in enim et felis pretium pellentesque. Suspendisse nec metus scelerisque, fringilla tortor sed, pretium mi. Pellentesque nec felis sed purus porta posuere.
-                </p>
+                <div class="boton1">
+                    <button class="enviarDatos" onclick="window.location.href = 'pago.html';">Guardar y Continuar</button>
+                </div>
             </content>
             
         </article>
             
         </div>
     </div>
-    
-    <aside class="top-sidebar">
-        <article>
-            <h2>Top sidebar</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed finibus odio. Aliquam sit amet condimentum nisi. Quisque eget odio facilisis, ultricies massa vel, laoreet risus. Morbi et maximus enim. Curabitur enim nisl, egestas quis varius eu, blandit a purus. Etiam in enim et felis pretium pellentesque. Suspendisse nec metus scelerisque, fringilla tortor sed, pretium mi. Pellentesque nec felis sed purus porta posuere.</p>
-        </article>
-    </aside>
-    
-    <aside class="middle-sidebar">
-        <article>
-            <h2>Middle sidebar</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed finibus odio. Aliquam sit amet condimentum nisi. Quisque eget odio facilisis, ultricies massa vel, laoreet risus. Morbi et maximus enim. Curabitur enim nisl, egestas quis varius eu, blandit a purus. Etiam in enim et felis pretium pellentesque. Suspendisse nec metus scelerisque, fringilla tortor sed, pretium mi. Pellentesque nec felis sed purus porta posuere.</p>
-        </article>
-    </aside>
-    
-    <aside class="bottom-sidebar">
-        <article>
-            <h2>Bottom sidebar</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed finibus odio. Aliquam sit amet condimentum nisi. Quisque eget odio facilisis, ultricies massa vel, laoreet risus. Morbi et maximus enim. Curabitur enim nisl, egestas quis varius eu, blandit a purus. Etiam in enim et felis pretium pellentesque. Suspendisse nec metus scelerisque, fringilla tortor sed, pretium mi. Pellentesque nec felis sed purus porta posuere.</p>
-        </article>
-    </aside>
     
     <footer class="footerPrincipal">
         <p>Copyright &copy; 2017 <a href="http://www.sindelantal.mx" title="Sin Delantal">Sin Delantal</a></p>
