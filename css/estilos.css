@@ -393,6 +393,7 @@ textarea{
 }
 }
 
+/*MEDIA QUERIES PARA AJUSTARSE AL IPHONE 5 Y DEMÁS*/
 @media only screen and (max-width:568px){
     .headerPrincipal nav{
         border-radius: 0!important;
